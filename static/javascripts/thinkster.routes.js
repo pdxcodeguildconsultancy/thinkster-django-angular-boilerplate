@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  anular
+  angular
     .module('thinkster.routes')
     .config(config);
 

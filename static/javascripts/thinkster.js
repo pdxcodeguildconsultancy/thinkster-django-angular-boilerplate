@@ -9,10 +9,17 @@
     ]);
 
   angular
-    .module('thinkster.routes', ['ngRoute']);
+  .module('thinkster.routes', ['ngRoute']);
 
-  .module('thinkster')
-  .run(run);
+  angular
+  .module('thinkster.authentication', []);
+
+  angular
+  .module('thinkster.config', []);
+
+  angular
+    .module('thinkster')
+    .run(run);
 
   run.$inject = ['$http'];
 

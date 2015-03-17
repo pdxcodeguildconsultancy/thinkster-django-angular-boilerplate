@@ -8,9 +8,8 @@
     ]);
 
   angular
-    .module('thinkster.authentication.contollers', []);
+    .module('thinkster.authentication.controllers', []);
 
   angular
     .module('thinkster.authentication.services', ['ngCookies']);
-
 })();
