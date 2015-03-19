@@ -10,6 +10,14 @@
   function RegisterController($location, $scope, Authentication) {
     var vm = this;
 
+    activate();
+
+    function activate() {
+      if (Authentication.isAuthenticated()) {
+        $location.url('/');
+      }
+    }
+
     vm.register = register;
 
     function register() {
