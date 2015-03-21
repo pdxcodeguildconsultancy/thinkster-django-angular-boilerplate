@@ -32,7 +32,7 @@
       return !!$cookies.authenticatedAccount;
     }
 
-    function register(email, password, username) {
+    function register(email, password, confirm_password, username) {
       return $http.post('/api/v1/accounts/', {
         username: username,
         password: password,
